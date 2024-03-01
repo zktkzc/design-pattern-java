@@ -12,4 +12,8 @@ public class LazySingleton implements Serializable {
             lazySingleton = new LazySingleton();
         return lazySingleton;
     }
+
+    public Object readResolve() {
+        return lazySingleton;
+    }
 }
