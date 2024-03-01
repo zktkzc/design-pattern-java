@@ -1,6 +1,8 @@
 package creational.singleton.enumSingleton;
 
-public enum EnumSingleton {
+import java.io.Serializable;
+
+public enum EnumSingleton implements Serializable {
     INSTANCE;
 
     public static EnumSingleton getInstance() {

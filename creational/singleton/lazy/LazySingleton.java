@@ -1,6 +1,8 @@
 package creational.singleton.lazy;
 
-public class LazySingleton {
+import java.io.Serializable;
+
+public class LazySingleton implements Serializable {
     private static LazySingleton lazySingleton = null;
 
     private LazySingleton() {}
